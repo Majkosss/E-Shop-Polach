@@ -27,7 +27,7 @@
 }
 
 .navbar-brand:hover {
-    color: #0056b3;
+    color: #6b00b3;
 }
 
 .navbar-nav .nav-link {
@@ -44,7 +44,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #0056b3;
+    color: #8e10b4;
 }
 
 .navbar-nav .nav-link.disabled {
@@ -66,5 +66,5 @@
 }
 
 form.d-flex input.form-control {
-    width: 250px; /* Extended width */
+    width: 250px;
 }
