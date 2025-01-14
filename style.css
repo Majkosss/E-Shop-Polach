@@ -74,36 +74,31 @@ form.d-flex input.form-control {
     width: 200px;
 }
 
-#cil {
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#cil, #vyhody {
     background-color: #f8f9fa;
     border: 2px solid #ececec;
     border-radius: 8px;
-    padding: 10px;
-    margin: 20px 0;
-    height: 200px;
+    padding: 20px;
     width: 45%;
-    overflow-y: scroll;
-}
-
-#novinky {
-    position: absolute;
-    top: 300px;
-    right: 20px;
-    width: 500px;
-}
-
-#novinky .card {
-    margin-bottom: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#novinky .card-title {
-    color: #dd2cf5;
-    font-weight: bold;
+#cil {
+    height: 300px;
+    overflow-y: scroll;
 }
 
-#novinky .card-text {
-    font-size: 0.9rem;
-    color: #555;
-    font-weight: bold;
+#vyhody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 200px;
+    width: 500px;
 }
