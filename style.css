@@ -99,6 +99,30 @@ form.d-flex input.form-control {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 200px;
-    width: 500px;
+    height: 300px;
+    width: 800px;
 }
+
+#novinky .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#novinky .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#novinky .card-title {
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+#novinky .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
