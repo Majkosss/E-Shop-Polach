@@ -27,14 +27,16 @@
 }
 
 .navbar-brand:hover {
-    color: #0056b3;
+    color: #6b00b3;
 }
 
 .navbar-nav .nav-link {
     font-size: 1rem;
     color: #333;
     margin-right: 10px;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
 .navbar-nav .nav-link.active {
@@ -44,12 +46,15 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #0056b3;
+    color: #8e10b4;
+    border-bottom: 2px solid #8e10b4;
 }
 
 .navbar-nav .nav-link.disabled {
     color: #aaa;
     cursor: not-allowed;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
 }
 
 .navbar-toggler {
@@ -66,5 +71,57 @@
 }
 
 form.d-flex input.form-control {
-    width: 250px; /* Extended width */
+    width: 200px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#cil, #vyhody {
+    background-color: #f8f9fa;
+    border: 2px solid #ececec;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cil {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#vyhody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 300px;
+    width: 800px;
+}
+
+#novinky .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#novinky .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#novinky .card-title {
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+#novinky .card-text {
+    font-size: 0.9rem;
+    color: #555;
 }
