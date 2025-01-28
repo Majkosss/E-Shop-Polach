@@ -1,3 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #ececec;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .navbar {
     background-color: #f8f9fa;
     border-bottom: 2px solid #ececec;
@@ -74,35 +113,68 @@ form.d-flex input.form-control {
     width: 200px;
 }
 
+/* Zarovnání sekcí */
 #info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info .row:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#info .row:first-child .col-12 {
+    max-width: 600px;
+}
+
+#info .row:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#info .col-md-6 {
+    display: flex;
+    flex: 1;
+}
+
+#info .card {
+    flex-grow: 1;
+}
+
+/* Styling pro kontakt */
+#kontakt .card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
+    gap: 20px;
+    padding: 40px 0;
 }
 
-#cil, #vyhody {
-    background-color: #f8f9fa;
-    border: 2px solid #ececec;
-    border-radius: 8px;
+.info-box {
+    background: #f8f9fa;
     padding: 20px;
-    width: 45%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
-#cil {
-    height: 300px;
-    overflow-y: scroll;
-}
-
-#vyhody {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 300px;
-    width: 800px;
-}
-
+/* Efekty pro hover */
 #novinky .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -125,3 +197,27 @@ form.d-flex input.form-control {
     font-size: 0.9rem;
     color: #555;
 }
+
+.btn-custom {
+    background-color: #6b00b3;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #58009b;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #6b00b3;
+    font-weight: bold;
+  }
+
+  .footer-link:hover {
+    font-size: 1.1rem;
+    color: black;
+  }
