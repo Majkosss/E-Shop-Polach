@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshop</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card-text {
+        text-align: center;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+        }
+
+        .card img {
+            max-height: 150px;
+            object-fit: cover;
+        }
+        .btn-custom {
+            background-color: #6b00b3;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #6b00b3;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">MAJK NÁBYTEK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../polozky.html">Položky</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Hledat" aria-label="Hledat">
+          <button class="btn btn-custom" type="submit">Hledat</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Postele</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="../images-inv/postel1.png" class="card-img-top" alt="Stůl">
+                <div class="card-body">
+                    <h5 class="card-title">Rohová postel</h5>
+                    <p class="card-text">Moderní postel s LED podsvícením a úložným prostorem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../images-inv/postel2.png" class="card-img-top" alt="Stůl">
+                <div class="card-body">
+                    <h5 class="card-title">Dřevěná postel</h5>
+                    <p class="card-text">Stylová postel s dřevěným rámem a kovovými nohami.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../images-inv/postel3.png" class="card-img-top" alt="Stůl">
+                <div class="card-body">
+                    <h5 class="card-title">Bílá postel</h5>
+                    <p class="card-text">Elegantní postel s vestavěnými policemi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../images-inv/postel4.png" class="card-img-top" alt="Stůl">
+                <div class="card-body">
+                    <h5 class="card-title">Luxusní postel</h5>
+                    <p class="card-text">Minimalistická postel s tmavým čalouněním.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../images-inv/postel5.png" class="card-img-top" alt="Stůl">
+                <div class="card-body">
+                    <h5 class="card-title">Skandinávská postel</h5>
+                    <p class="card-text">Přírodní dřevěná postel s jednoduchým designem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
